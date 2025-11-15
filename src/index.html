@@ -7,7 +7,9 @@
     <link href="output.css" rel="stylesheet" />
   </head>
   <body class="bg-black text-white">
-    <header class="px-12 flex items-center justify-between">
+    <header
+      class="px-12 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 w-full backdrop-blur-md shadow-md max-w-360"
+    >
       <a href="#">
         <img class="xl:w-32 lg:w-24 w-16" src="./images/logo.png" alt="logo" />
         <p class="text-sm xl:text-lg -mt-4 lg:-mt-6 xl:-mt-8">Hustle Haus</p>
@@ -27,5 +29,29 @@
       </nav>
       <button class="text-4xl md:hidden">☰</button>
     </header>
+    <section
+      id="hero-section"
+      class="sm:flex sm:flex-row flex-col max-w-360 2xl:min-h-255 xl:min-h-245 lg:min-h-220 md:min-h-180 sm:min-h-135 mx-auto"
+    >
+      <div
+        class="flex sm:w-[50%] lg:pt-40 md:pt-25 sm:pt-20 sm:pl-20 px-10 bg-[url(./images/hero-black-background.png)] sm:bg-none sm:h-auto h-[45vh]"
+      >
+        <h1
+          class="xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl xs:text-8xl text-6xl font-bold xl:leading-45 lg:leading-30 md:leading-20 self-center"
+        >
+          Hustle <br />
+          Haus
+        </h1>
+      </div>
+      <div
+        class="sm:bg-[url(./images/hero-background.png)] bg-[url(./images/hero-background-2.png)] flex bg-cover bg-no-repeat sm:w-[50%] lg:pt-40 md:pt-25 sm:pt-20 px-10 sm:px-0"
+      >
+        <img
+          class="w-full xl:-left-40 lg:-left-30 md:-left-20 sm:-left-20 -top-35 sm:top-0 relative self-center"
+          src="./images/hero-image.png"
+          alt="white-shoe-image"
+        />
+      </div>
+    </section>
   </body>
 </html>
