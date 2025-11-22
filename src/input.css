@@ -1,5 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Archivo:regular,500,700);
+@import url(https://fonts.googleapis.com/css?family=Biryani:200,300,regular,600,700,800,900);
+
 @import "tailwindcss";
 
 @theme {
   --breakpoint-xs: 30rem; /* New breakpoint (480px) */
+  --font-archivo: "Archivo", sans-serif;
+  --font-biryani: "Biryani", sans-serif;
 }

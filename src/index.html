@@ -8,11 +8,19 @@
   </head>
   <body class="bg-black text-white">
     <header
-      class="px-12 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 w-full backdrop-blur-md shadow-md max-w-360"
+      class="font-archivo font-bold px-12 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 w-full backdrop-blur-md shadow-md max-w-360 z-50"
     >
       <a href="#">
-        <img class="xl:w-32 lg:w-24 w-16" src="./images/logo.png" alt="logo" />
-        <p class="text-sm xl:text-lg -mt-4 lg:-mt-6 xl:-mt-8">Hustle Haus</p>
+        <img
+          class="xl:w-32 lg:w-24 xs:w-16 w-12"
+          src="./images/logo.png"
+          alt="logo"
+        />
+        <p
+          class="xl:text-lg xs:text-sm text-[.75rem] sm:-mt-4 xs:-mt-4 -mt-3 lg:-mt-6 xl:-mt-8"
+        >
+          Hustle Haus
+        </p>
       </a>
       <nav
         class="hidden md:block xl:space-x-8 lg:space-x-5 lg:text-2xl md:text-lg md:space-x-4"
@@ -31,13 +39,13 @@
     </header>
     <section
       id="hero-section"
-      class="sm:flex sm:flex-row flex-col max-w-360 2xl:min-h-255 xl:min-h-245 lg:min-h-220 md:min-h-180 sm:min-h-135 mx-auto"
+      class="sm:flex sm:flex-row flex-col max-w-360 2xl:min-h-255 xl:min-h-245 lg:min-h-220 md:min-h-180 mx-auto"
     >
       <div
-        class="flex sm:w-[50%] lg:pt-40 md:pt-25 sm:pt-20 sm:pl-20 px-10 bg-[url(./images/hero-black-background.png)] sm:bg-none sm:h-auto h-[45vh]"
+        class="flex sm:w-[50%] lg:pt-40 md:pt-25 sm:pt-20 sm:pl-20 px-10 bg-[url(./images/hero-black-background.png)] sm:bg-none sm:h-auto h-100"
       >
         <h1
-          class="xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl xs:text-8xl text-6xl font-bold xl:leading-45 lg:leading-30 md:leading-20 self-center"
+          class="font-archivo xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl xs:text-8xl text-6xl font-bold xl:leading-45 lg:leading-30 md:leading-20 self-center"
         >
           Hustle <br />
           Haus
@@ -51,6 +59,99 @@
           src="./images/hero-image.png"
           alt="white-shoe-image"
         />
+      </div>
+    </section>
+    <section id="how-it-works" class="max-w-360 mx-auto sm:px-20 px-5 py-10">
+      <h2
+        class="font-archivo font-bold text-center 2xl:text-5xl xl:text-4xl md:text-3xl xs:text-2xl text-xl xl:max-w-2xl md:max-w-100 sm:max-w-80 max-w-75 mx-auto"
+      >
+        Have they finally made the perfect workout shoe?
+      </h2>
+      <div
+        class="relative 2xl:translate-x-0 translate-x-[7%] 2xl:max-w-214 xl:max-w-178 lg:max-w-160 md:max-w-100 sm:max-w-80 xs:max-w-62 max-w-50 lg:mt-15 md:mt-30 sm:mt-50 mt-45 mx-auto"
+      >
+        <img
+          class="w-full md:rotate-0 rotate-6"
+          src="./images/how-it-works-shoe-1.png"
+          alt="white-shoe-image"
+        />
+        <div
+          class="xl:max-w-62 lg:max-w-50 md:max-w-40 xs:max-w-40 max-w-30 absolute lg:top-0 md:-top-5 sm:-top-35 xs:-top-30 -top-25 xl:-left-60 lg:-left-50 md:-left-40 sm:-left-30 xs:-left-20 -left-10"
+        >
+          <div>
+            <h3
+              class="font-archivo font-bold 2xl:text-[2rem] lg:text-[1.7rem] md:text-[1.5rem] xs:text-[1.25rem] text-[1rem]"
+            >
+              THE HEEL
+            </h3>
+            <p
+              class="font-archivo font-regular 2xl:text-[1.25rem] lg:text-[1rem] xs:text-[.75rem] text-[.5rem]"
+            >
+              The heel is well-built, has appropriate elevation and is not too
+              rigid.
+            </p>
+          </div>
+          <div
+            class="relative 2xl:top-5 sm:top-0 top-5 xs:left-0 -left-5 xl:top-0 md:rotate-0 xs:rotate-45 rotate-55"
+          >
+            <img
+              class="sm:ml-auto ml-0 lg:w-[80%] xs:w-[70%] max-w-[65%]"
+              src="./images/arrow-1-1.png"
+              alt="arrow-1-1"
+            />
+          </div>
+        </div>
+        <div
+          class="w-full flex flex-col-reverse md:block 2xl:max-w-108 xl:max-w-95 lg:max-w-80 md:max-w-60 xs:max-w-45 max-w-30 absolute md:top-10 xs:-top-20 -top-15 md:-right-30 sm:-right-20 xs:-right-25 -right-10"
+        >
+          <div
+            class="md:w-[42.50%] w-[55%] md:static sm:top-0 xs:-top-1 relative -top-1"
+          >
+            <img
+              class="md:ml-auto md:rotate-0 rotate-125"
+              src="./images/arrow-2-1.png"
+              alt="arrow-2-1"
+            />
+          </div>
+          <div
+            class="md:w-[57.41%] w-full md:absolute static right-0 top-[30%]"
+          >
+            <h3
+              class="font-archivo font-bold 2xl:text-[2rem] lg:text-[1.7rem] xs:text-[1.25rem] text-[1rem]"
+            >
+              THE FRONT
+            </h3>
+            <p
+              class="font-archivo font-regular 2xl:text-[1.25rem] lg:text-[1rem] xs:text-[.75rem] text-[.5rem]"
+            >
+              The front is comfortable and adjusts well to the shape of your
+              foot.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex 2xl:max-w-111 xl:max-w-92 lg:max-w-80 md:max-w-60 xs:max-w-65 max-w-64 absolute 2xl:-bottom-5 lg:bottom-0 md:-bottom-8 xs:-bottom-30 -bottom-15 xs:left-0 -left-10"
+        >
+          <div class="w-[60%]">
+            <h3
+              class="font-archivo font-bold 2xl:text-[2rem] lg:text-[1.7rem] xs:text-[1.25rem] text-[1rem]"
+            >
+              TRACTION
+            </h3>
+            <p
+              class="font-archivo font-regular 2xl:text-[1.25rem] lg:text-[1rem] xs:text-[.75rem] text-[.5rem]"
+            >
+              The shoe has good traction and doesn't slip easily.
+            </p>
+          </div>
+          <div class="xs:w-[40%] w-[25%]">
+            <img
+              class="lg:-translate-x-[42%] md:-translate-x-[35%] xs:-translate-x-[75%] -translate-x-[95%] md:-translate-y-[25%] -translate-y-[65%]"
+              src="./images/arrow-3-1.png"
+              alt="arrow-3-1"
+            />
+          </div>
+        </div>
       </div>
     </section>
   </body>
