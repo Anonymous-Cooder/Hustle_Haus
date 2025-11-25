@@ -744,6 +744,9 @@
   .text-\[1\.25rem\] {
     font-size: 1.25rem;
   }
+  .text-\[1\.75rem\] {
+    font-size: 1.75rem;
+  }
   .text-\[1rem\] {
     font-size: 1rem;
   }
@@ -927,6 +930,11 @@
       font-size: 1.25rem;
     }
   }
+  .xs\:text-\[1\.75rem\] {
+    @media (width >= 30rem) {
+      font-size: 1.75rem;
+    }
+  }
   .sm\:-top-35 {
     @media (width >= 40rem) {
       top: calc(var(--spacing) * -35);
@@ -967,9 +975,19 @@
       margin-left: auto;
     }
   }
+  .sm\:block {
+    @media (width >= 40rem) {
+      display: block;
+    }
+  }
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
     }
   }
   .sm\:h-80 {
@@ -1005,6 +1023,15 @@
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
+    }
+  }
+  .sm\:space-x-3 {
+    @media (width >= 40rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+      }
     }
   }
   .sm\:bg-black {
@@ -1244,6 +1271,15 @@
       }
     }
   }
+  .md\:space-x-3 {
+    @media (width >= 48rem) {
+      :where(& > :not(:last-child)) {
+        --tw-space-x-reverse: 0;
+        margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+        margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
+      }
+    }
+  }
   .md\:space-x-4 {
     @media (width >= 48rem) {
       :where(& > :not(:last-child)) {
@@ -1300,6 +1336,12 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .md\:text-sm {
+    @media (width >= 48rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
   .md\:text-\[1\.5rem\] {
     @media (width >= 48rem) {
       font-size: 1.5rem;
@@ -1334,6 +1376,16 @@
   .lg\:-left-50 {
     @media (width >= 64rem) {
       left: calc(var(--spacing) * -50);
+    }
+  }
+  .lg\:-mt-4 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * -4);
+    }
+  }
+  .lg\:-mt-5 {
+    @media (width >= 64rem) {
+      margin-top: calc(var(--spacing) * -5);
     }
   }
   .lg\:-mt-6 {
@@ -1374,6 +1426,21 @@
   .lg\:w-6 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 6);
+    }
+  }
+  .lg\:w-16 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 16);
+    }
+  }
+  .lg\:w-17 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 17);
+    }
+  }
+  .lg\:w-18 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 18);
     }
   }
   .lg\:w-24 {
@@ -1519,6 +1586,16 @@
       left: calc(var(--spacing) * -60);
     }
   }
+  .xl\:-mt-6 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * -6);
+    }
+  }
+  .xl\:-mt-7 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * -7);
+    }
+  }
   .xl\:-mt-8 {
     @media (width >= 80rem) {
       margin-top: calc(var(--spacing) * -8);
@@ -1557,6 +1634,16 @@
   .xl\:w-7 {
     @media (width >= 80rem) {
       width: calc(var(--spacing) * 7);
+    }
+  }
+  .xl\:w-22 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 22);
+    }
+  }
+  .xl\:w-24 {
+    @media (width >= 80rem) {
+      width: calc(var(--spacing) * 24);
     }
   }
   .xl\:w-32 {
@@ -1632,6 +1719,12 @@
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
   }
+  .xl\:text-xl {
+    @media (width >= 80rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
   .xl\:text-\[4rem\] {
     @media (width >= 80rem) {
       font-size: 4rem;
@@ -1677,6 +1770,12 @@
     @media (width >= 96rem) {
       --tw-translate-x: calc(var(--spacing) * 0);
       translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .\32 xl\:text-2xl {
+    @media (width >= 96rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .\32 xl\:text-5xl {
