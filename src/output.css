@@ -9,12 +9,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-2xl: 42rem;
-    --container-6xl: 72rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
@@ -39,9 +37,7 @@
     --text-9xl--line-height: 1;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
-    --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --radius-lg: 0.5rem;
     --blur-md: 12px;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -225,6 +221,9 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-2 {
+    top: calc(var(--spacing) * 2);
+  }
   .top-5 {
     top: calc(var(--spacing) * 5);
   }
@@ -236,6 +235,9 @@
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
+  }
+  .right-3 {
+    right: calc(var(--spacing) * 3);
   }
   .-bottom-15 {
     bottom: calc(var(--spacing) * -15);
@@ -389,6 +391,9 @@
   .rotate-125 {
     rotate: 125deg;
   }
+  .cursor-pointer {
+    cursor: pointer;
+  }
   .resize {
     resize: both;
   }
@@ -409,6 +414,13 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .space-y-3 {
+    :where(& > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+    }
   }
   .space-y-5 {
     :where(& > :not(:last-child)) {
@@ -498,14 +510,14 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .px-6 {
+    padding-inline: calc(var(--spacing) * 6);
+  }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
-  }
-  .px-12 {
-    padding-inline: calc(var(--spacing) * 12);
   }
   .py-7 {
     padding-block: calc(var(--spacing) * 7);
@@ -536,10 +548,6 @@
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
-  .text-6xl {
-    font-size: var(--text-6xl);
-    line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
@@ -549,6 +557,9 @@
   }
   .text-\[\.75rem\] {
     font-size: .75rem;
+  }
+  .text-\[1\.5rem\] {
+    font-size: 1.5rem;
   }
   .text-\[1\.25rem\] {
     font-size: 1.25rem;
@@ -590,6 +601,76 @@
   .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .group-\[\.open-menu\]\:absolute {
+    &:is(:where(.group):is(.open-menu) *) {
+      position: absolute;
+    }
+  }
+  .group-\[\.open-menu\]\:top-15 {
+    &:is(:where(.group):is(.open-menu) *) {
+      top: calc(var(--spacing) * 15);
+    }
+  }
+  .group-\[\.open-menu\]\:top-17 {
+    &:is(:where(.group):is(.open-menu) *) {
+      top: calc(var(--spacing) * 17);
+    }
+  }
+  .group-\[\.open-menu\]\:top-18 {
+    &:is(:where(.group):is(.open-menu) *) {
+      top: calc(var(--spacing) * 18);
+    }
+  }
+  .group-\[\.open-menu\]\:top-20 {
+    &:is(:where(.group):is(.open-menu) *) {
+      top: calc(var(--spacing) * 20);
+    }
+  }
+  .group-\[\.open-menu\]\:right-\[5\%\] {
+    &:is(:where(.group):is(.open-menu) *) {
+      right: 5%;
+    }
+  }
+  .group-\[\.open-menu\]\:block {
+    &:is(:where(.group):is(.open-menu) *) {
+      display: block;
+    }
+  }
+  .group-\[\.open-menu\]\:flex {
+    &:is(:where(.group):is(.open-menu) *) {
+      display: flex;
+    }
+  }
+  .group-\[\.open-menu\]\:h-60 {
+    &:is(:where(.group):is(.open-menu) *) {
+      height: calc(var(--spacing) * 60);
+    }
+  }
+  .group-\[\.open-menu\]\:w-35 {
+    &:is(:where(.group):is(.open-menu) *) {
+      width: calc(var(--spacing) * 35);
+    }
+  }
+  .group-\[\.open-menu\]\:flex-col {
+    &:is(:where(.group):is(.open-menu) *) {
+      flex-direction: column;
+    }
+  }
+  .group-\[\.open-menu\]\:bg-\[\#0f0f0fd6\] {
+    &:is(:where(.group):is(.open-menu) *) {
+      background-color: #0f0f0fd6;
+    }
+  }
+  .group-\[\.open-menu\]\:p-4 {
+    &:is(:where(.group):is(.open-menu) *) {
+      padding: calc(var(--spacing) * 4);
+    }
+  }
+  .group-\[\.open-menu\]\:pt-8 {
+    &:is(:where(.group):is(.open-menu) *) {
+      padding-top: calc(var(--spacing) * 8);
+    }
   }
   .xs\:-top-1 {
     @media (width >= 30rem) {
@@ -697,6 +778,11 @@
       padding-inline: calc(var(--spacing) * 11);
     }
   }
+  .xs\:px-12 {
+    @media (width >= 30rem) {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+  }
   .xs\:text-2xl {
     @media (width >= 30rem) {
       font-size: var(--text-2xl);
@@ -767,11 +853,6 @@
   .sm\:ml-auto {
     @media (width >= 40rem) {
       margin-left: auto;
-    }
-  }
-  .sm\:block {
-    @media (width >= 40rem) {
-      display: block;
     }
   }
   .sm\:flex {
@@ -974,11 +1055,6 @@
       height: calc(var(--spacing) * 100);
     }
   }
-  .md\:h-auto {
-    @media (width >= 48rem) {
-      height: auto;
-    }
-  }
   .md\:h-full {
     @media (width >= 48rem) {
       height: 100%;
@@ -1078,29 +1154,9 @@
       background-image: url(./images/about-us-background-1.jpg);
     }
   }
-  .md\:bg-auto {
-    @media (width >= 48rem) {
-      background-size: auto;
-    }
-  }
-  .md\:bg-size-\[100\%_70\%\] {
-    @media (width >= 48rem) {
-      background-size: 100% 70%;
-    }
-  }
-  .md\:bg-size-\[100\%_75\%\] {
-    @media (width >= 48rem) {
-      background-size: 100% 75%;
-    }
-  }
   .md\:bg-size-\[100\%_80\%\] {
     @media (width >= 48rem) {
       background-size: 100% 80%;
-    }
-  }
-  .md\:bg-left {
-    @media (width >= 48rem) {
-      background-position: left;
     }
   }
   .md\:bg-top-left {

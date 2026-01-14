@@ -1,14 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Hustle Haus – Stylish Shoes" />
+    <meta
+      property="og:description"
+      content="Comfortable and stylish footwear for everyone. Shop latest designs at Hustle Haus."
+    />
+    <meta
+      property="og:image"
+      content="https://hustle-haus.netlify.app/images/preview.png"
+    />
+    <meta property="og:url" content="https://hustle-haus.netlify.app/" />
+    <meta property="og:type" content="website" />
     <title>Hustle Haus</title>
+    <script src="index.js" defer></script>
     <link href="output.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body class="sm:bg-black bg-[#222222] text-white">
     <header
-      class="font-archivo font-bold px-12 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 w-full backdrop-blur-md shadow-md max-w-360 z-50"
+      id="header"
+      class="group font-archivo font-bold px-6 xs:px-12 flex items-center justify-between fixed top-0 left-1/2 -translate-x-1/2 w-full backdrop-blur-md shadow-md max-w-360 z-50"
     >
       <a href="#">
         <img
@@ -22,9 +36,15 @@
           Hustle Haus
         </p>
       </a>
+
       <nav
-        class="hidden sm:block xl:space-x-8 lg:space-x-5 lg:text-2xl md:text-lg md:space-x-4 sm:space-x-3"
+        class="hidden group-[.open-menu]:flex group-[.open-menu]:flex-col group-[.open-menu]:bg-[#0f0f0fd6] group-[.open-menu]:absolute group-[.open-menu]:top-18 group-[.open-menu]:right-[5%] group-[.open-menu]:w-35 group-[.open-menu]:h-60 group-[.open-menu]:p-4 group-[.open-menu]:pt-8 sm:flex sm:flex-row xl:space-x-8 lg:space-x-5 lg:text-2xl md:text-lg md:space-x-4 sm:space-x-3 space-y-3"
       >
+        <img
+          class="hidden group-[.open-menu]:block absolute top-2 right-3 cursor-pointer text-[1.5rem]"
+          src="./images/arrowright.png"
+          alt="arrow-right"
+        />
         <a
           class="font-archivo 2xl:text-2xl lg:text-xl md:text-[1rem] text-[.75rem] font-bold"
           href="#"
@@ -51,7 +71,12 @@
           >Contact Us</a
         >
       </nav>
-      <button class="xs:text-[1.75rem] text-[1.25rem] sm:hidden">☰</button>
+      <button
+        id="hamburger-menu"
+        class="xs:text-[1.75rem] text-[1.25rem] sm:hidden cursor-pointer"
+      >
+        ☰
+      </button>
     </header>
     <section
       id="hero-section"
@@ -61,7 +86,7 @@
         class="flex items-center sm:justify-center sm:w-[50%] bg-[url(./images/hero-black-background.png)] sm:bg-none sm:px-0 xs:px-10 px-5 py-40 sm:p-0"
       >
         <h1
-          class="font-archivo xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl xs:text-8xl text-6xl font-bold xl:leading-45 lg:leading-30 md:leading-20"
+          class="font-archivo xl:text-9xl lg:text-8xl md:text-7xl sm:text-6xl xs:text-8xl text-5xl font-bold xl:leading-45 lg:leading-30 md:leading-20"
         >
           Hustle <br />
           Haus
@@ -219,7 +244,7 @@
         >
           Simple right? Not just we are here to spare your time, we are putting
           forth you the most dazzling footwear alternatives from all the
-          first-rate brands like DAVINCHI, PRINCESS, and SIGNATURE.
+          first-rate brands like dai-ichi, PRINCESS, and SIGNATURE.
         </p>
       </div>
     </section>
