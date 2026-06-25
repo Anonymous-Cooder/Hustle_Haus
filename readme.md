@@ -5,13 +5,19 @@ A fast, minimalist template for creators, dreamers, and doers — built to help 
 
 ---
 
+## 🎯 Preview!
+
+![](./src/images/preview.png)
+
+---
+
 ## 🚀 Features
 
-- ⚡ **Modern UI** — Sleek and responsive design  
-- 🎨 **Tailwind CSS Styling** — Utility-first and easy to customize  
-- 🧩 **Reusable Components** — Organized, modular structure  
-- 🌙 **Dark Mode Ready** — Looks good in every mood  
-- ⚙️ **No Frameworks Needed** — 100% Vanilla JS power  
+- ⚡ **Modern UI** — Sleek and responsive design
+- 🎨 **Tailwind CSS Styling** — Utility-first and easy to customize
+- 🧩 **Reusable Components** — Organized, modular structure
+- 🌙 **Dark Mode Ready** — Looks good in every mood
+- ⚙️ **No Frameworks Needed** — 100% Vanilla JS power
 
 ---
 
@@ -29,3 +35,4 @@ A fast, minimalist template for creators, dreamers, and doers — built to help 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/Anonymous-Cooder/Hustle_Haus.git
+   ```
